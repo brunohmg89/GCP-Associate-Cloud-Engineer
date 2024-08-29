@@ -4,4 +4,5 @@ Estudos para certificação GCP Associate Cloud Engineer
 
 ## Status
 - Trilha de cursos preparatório em andamento...
-- Workshop agendado para Agosto
+- Workshop preparatório concluído
+- Inicio dos estudos da plataforma do Google
