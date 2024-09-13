@@ -1,10 +1,10 @@
 # Associate Cloud Engineer
 
-### Laboratório prático - Um tour pelo Google Cloud
+## Laboratório prático - Um tour pelo Google Cloud
 
 Realizando um pequeno laboratório, um tour pelos principais recursos do Google Cloud
 
-### Preparing for Your Associate Cloud Engineer Journey
+## Preparing for Your Associate Cloud Engineer Journey
 
 ### Introdução
 
@@ -515,3 +515,281 @@ Cenário da Cymbal
     :white_check_mark: Cloud Spanner
 
     :black_large_square: Cloud SQL
+
+---
+
+## Módulo 4
+
+### Como garantir a operação de uma solução de nuvem
+
+### Questões de diagnóstcio
+
+1. Qual objeto do Kubernetes concede acesso à lógica em execução no cluster por endpoints que você define?
+
+    :white_check_mark: Services
+
+    :black_large_square: Pods
+
+    :black_large_square: Pod templates
+
+    :black_large_square: Deployments
+
+---
+
+2. Você tem um serviço do Cloud Run com um back-end de banco de dados. e pretende limitar o número de conexões com o banco de dados. O que você deve fazer?
+
+    :white_check_mark: Definir o máximo de instâncias.
+
+    :black_large_square: Definir o uso da CPU.
+
+    :black_large_square: Definir o mínimo de instâncias.
+
+    :black_large_square: Definir configurações de simultaneidade.
+
+---
+
+3. Você pretende implementar uma regra de ciclo de vida que altere o tipo de armazenamento de Standard para Nearline após uma data específica. Quais condições você deve usar? Escolha duas respostas.
+
+    :black_large_square: Age
+
+    :black_large_square: MatchesStorageClass
+
+    :white_check_mark: NumberofNewerVersions
+
+    :black_large_square: IsLive
+
+    :white_check_mark: CreatedBefore
+
+---
+
+4. O sistema de gerenciamento da cadeia de suprimentos da Cymbal Superstore foi implantado e está funcionando bem. Você é responsável por monitorar os recursos do sistema para que possa reagir rapidamente a qualquer problema. Você pretende garantir que o uso da CPU de cada instância do Compute Engine em us-central1 permaneça abaixo de 60%. Também quer que um incidente seja criado se esse valor for excedido por cinco minutos. Para isso, precisa configurar a política de alertas adequada para esse cenário. O que você deve fazer?
+
+    :white_check_mark: Escolher o tipo de recurso "instância de VM" e a métrica "uso da CPU", o gatilho de condição "caso haja violação de alguma série temporal", a condição "acima de" e o limite de 0,60 por 5 minutos.
+
+    :black_large_square: Escolher o tipo de recurso "instância de VM" e a métrica "uso da CPU", o gatilho de condição "caso haja violação de todas as séries temporais", a condição "acima de" e o limite de 0,60 por 5 minutos.
+
+    :black_large_square: Escolher o tipo de recurso "instância de VM" e a métrica "uso da CPU", o gatilho de condição "caso haja violação de alguma série temporal", a condição "abaixo de" e o limite de 0,60 por 5 minutos.
+
+    :black_large_square: Escolher o tipo de recurso "instância de VM" e a métrica "carga da CPU", o gatilho de condição "caso haja violação de alguma série temporal", a condição "abaixo de" e o limite de 0,60 por 5 minutos.
+
+---
+
+5. Quais das tarefas a seguir fazem parte do processo de configuração de um grupo gerenciado de instâncias? Escolha duas respostas.
+
+    :white_check_mark: Fornecer o número de instâncias
+
+    :black_large_square: Escolher o tipo de máquina da instância
+
+    :white_check_mark: Definir os Health checks
+
+    :black_large_square: Configurar o sistema operacional
+
+---
+
+6. Você quer ver uma descrição dos seus snapshots disponíveis com a interface de linha de comando (CLI). Que comando gcloud você deve usar?
+
+    :black_large_square: gcloud compute list snapshots
+
+    :black_large_square: gcloud snapshots list
+
+    :black_large_square: gcloud compute snapshots get
+
+    :white_check_mark: gcloud compute snapshots list
+
+---
+
+7. Você tem um snapshot programado que está tentando excluir, mas a operação retorna um erro. O que você deve fazer para resolver esse problema?
+
+    :black_large_square: Excluir os snapshots incrementais downstream antes de excluir a referência principal.
+
+    :white_check_mark: Remover a programação do snapshot antes de excluí-la.
+
+    :black_large_square: Restaurar o snapshot em um disco permanente antes de excluí-lo.
+
+    :black_large_square: Excluir o objeto de origem do snapshot.
+
+---
+
+8. Qual é a maneira declarativa de inicializar e atualizar objetos do Kubernetes?
+
+    :black_large_square: kubectl create
+
+    :black_large_square: kubectl run
+
+    :white_check_mark: kubectl apply
+
+    :black_large_square: kubectl replace
+
+---
+
+9. O cluster do GKE da Cymbal Superstore requer um balanceador de carga http(s) interno. Você está criando os arquivos de configuração necessários para esse recurso. Qual é a configuração apropriada para esse cenário?
+
+    :black_large_square: Configurar o objeto de serviço com um tipo: LoadBalancer.
+
+    :black_large_square: Implementar rotas estáticas personalizadas na VPC.
+
+    :black_large_square:Anotar seu objeto de entrada com a ingress.class "gce".
+
+    :white_check_mark: Anotar o objeto de serviço com uma referência NEG.
+
+---
+
+10. A Cymbal Superstore tem uma sub-rede chamada "mysubnet" com o intervalo de IPs 10.1.2.0/24. Você precisa expandir essa sub-rede para incluir endereços IP suficientes para pelo menos 2.000 usuários ou dispositivos. O que você deve fazer?
+
+    :black_large_square: gcloud compute networks subnets expand-ip-range mysubnet --region us-cetnral1 --prefix-length 22
+
+    :white_check_mark: gcloud compute networks subnets expand-ip-range mysubnet --region us-central1 --prefix-length 21
+
+    :black_large_square: gcloud networks subnets expand-ip-range mysubnet --region us-central1 --prefix-length 21
+
+    :black_large_square: gcloud compute networks subnets expand-ip-range mysubnet --region us-central1 --prefix-length 20
+
+---
+
+### Questões de revisão
+
+1. Qual configuração de escalonamento automático do Cloud Run você deve definir se quiser limitar o custo?
+
+    :white_check_mark: Máximo de instâncias
+
+    :black_large_square: Utilização da CPU
+
+    :black_large_square: Configurações de simultaneidade
+
+    :black_large_square: Instâncias mínimas
+
+---
+
+2. Qual objeto do GKE implementa um balanceador de carga http(s)?
+
+    :black_large_square: Service
+
+    :black_large_square: Pod
+
+    :white_check_mark: Ingress
+
+    :black_large_square: Deployment
+
+---
+
+## Módulo 5
+
+### Como configurar o acesso e a segurança
+
+## Questões de diagnóstico
+
+1. A Cymbal Superstore está implementando um app para dispositivos móveis para que os usuários finais rastreiem as entregas que estão a caminho deles. O app precisa acessar dados sobre o local do caminhão pelo Pub/Sub usando as práticas recomendadas do Google. Quais tipos de credenciais você deve usar?
+
+    :white_check_mark: Chave da conta de serviço
+
+    :black_large_square: Cliente OAuth 2.0
+
+    :black_large_square: Chave de API
+
+    :black_large_square: Conta de serviço fornecida pelo ambiente
+
+---
+
+2. Qual registro de auditoria do Cloud é desativado por padrão, com algumas exceções?
+
+    :black_large_square: Registros de auditoria de evento do sistema
+
+    :black_large_square: Registros de auditoria de política negada
+
+    :white_check_mark: Registros de auditoria de acesso a dados
+
+    :black_large_square: Registros de auditoria de atividade do administrador
+
+---
+
+3. Você tem um papel personalizado implementado para administração do ambiente de desenvolvimento/teste do aplicativo de gerenciamento de transporte da Cymbal Superstore. Você está desenvolvendo um piloto para usar o Cloud Run em vez do Cloud Functions. Você quer garantir que seus administradores tenham o acesso correto aos novos recursos. O que você deve fazer?
+
+    :black_large_square: Excluir o papel personalizado e criar um novo com as permissões necessárias
+
+    :white_check_mark: Fazer a alteração no papel personalizado localmente e executar uma atualização no papel personalizado
+
+    :black_large_square: Criar um novo papel com as permissões necessárias e migrar usuários para ele.
+
+    :black_large_square: Copiar o papel atual, adicionar as novas permissões à cópia e excluir o papel antigo.
+
+---
+
+4. Você está atribuindo papéis aos projetos dev e prod do app de e-commerce da Cymbal Superstore, mas recebe um erro ao tentar executar set-iam policy. Os projetos são organizados em uma pasta e-commerce na hierarquia organizacional da Cymbal Superstore. Você pode seguir as práticas recomendadas das permissões necessárias, respeitando a prática de privilégio mínimo. O que você deve fazer?
+
+    :black_large_square: Solicitar ao administrador o papel roles/iam.securityAdmin no IAM.
+
+    :black_large_square: Solicitar ao administrador o roles/resourcemanager.organizationAdmin da Cymbal Superstore
+
+    :white_check_mark: Solicitar ao administrador o papel roles/resourcemanager.folderIamAdmin para a pasta e-commerce
+
+    :black_large_square: Solicitar ao administrador os papéis resourcemanager.projects.setIamPolicy para cada projeto
+
+---
+
+5. Você precisa configurar o acesso ao Cloud Spanner pelo cluster doW GKE que atende ao aplicativo de microsserviços de e-commerce da Cymbal Superstore. Você quer especificar um tipo de conta para definir as permissões adequadas. O que você deve fazer?
+
+    :black_large_square: Atribuir permissões por uma conta do Google Workspace referenciada pelo aplicativo
+
+    :black_large_square: Atribuir permissões a uma conta do Google referenciada pelo aplicativo
+
+    :black_large_square: Atribuir permissões por uma conta do Cloud Identity referenciada pelo aplicativo
+
+    :white_check_mark: Atribuir permissões pela conta de serviço referenciada pelo aplicativo
+
+---
+
+6. Descreva onde os registros de auditoria do Cloud podem ser acessados: na guia de registro da interface de operações. Link: https://cloud.google.com/storage/docs/audit-logging. Você está configurando a geração de registros de auditoria para o Cloud Storage e quer saber quando os objetos são adicionados a um bucket. Que tipo de entrada de registro de auditoria você deve monitorar?
+
+    :white_check_mark: Entradas de registro DATA_WRITE
+
+    :black_large_square: Entradas de registro ADMIN_READ
+
+    :black_large_square: Entradas do registro de atividades do administrador
+
+    :black_large_square: Entradas de registro DATA_READ
+
+---
+
+7. Qual dos cenários abaixo é um exemplo de situação em que você deve usar uma conta de serviço?
+
+    :black_large_square: Ambientes de desenvolvimento
+
+    :black_large_square: Acesso direto aos dados do usuário
+
+    :black_large_square: Análise interativa
+
+    :white_check_mark: Pods individuais do GKE
+
+---
+
+## Questões de revisão
+
+1. Que tipo de conta se destina à comunicação máquina a máquina no Google Cloud?
+
+    :white_check_mark: Conta de serviço
+
+    :black_large_square: Conta do Cloud Identity
+
+    :black_large_square: Conta do Google Workspace
+
+    :black_large_square: Conta de usuário
+
+---
+
+2. Você está autenticando um aplicativo para APIs de serviço. Ambos os recursos são internos ao ambiente do Google Cloud. Quais tipos de credenciais você deve usar?
+
+    :black_large_square: Credenciais de conta de usuário
+
+    :black_large_square: Chaves de API
+
+    :black_large_square: Chaves armazenadas localmente
+
+    :white_check_mark: Credenciais temporárias
+
+---
+
+## Módulo 6
+
+### Próximas etapas
+
+Elaborando plano de estudos
