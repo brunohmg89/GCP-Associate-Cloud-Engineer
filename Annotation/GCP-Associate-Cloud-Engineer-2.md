@@ -207,4 +207,90 @@
 
 ### Teste
 
+1. Qual é o caso de uso correto para o Cloud Storage?
+
+    :black_large_square: O Cloud Storage é indicado para fornecer o sistema de arquivos raiz de uma máquina virtual com Linux.
+
+    :white_check_mark: O Cloud Storage é adequado para fornecer armazenamento de objetos durável e altamente disponível.
+
+    :black_large_square: O Cloud Storage é adequado para fornecer serviços de armazenamento em data warehouse.
+
+    :black_large_square: O Cloud Storage é adequado para oferecer serviços RDBMS.
+
+> O Cloud Storage é um armazenamento de objetos, e não de arquivos.
+
+--- 
+
+2. Por que um cliente consideraria a classe Coldline Storage?
+
+    :black_large_square: Para melhorar a segurança.
+
+    :black_large_square: Para reduzir custos com o armazenamento de dados acessados com frequência.
+
+    :black_large_square: Para usar a API Coldline Storage.
+
+    :white_check_mark: Para reduzir os custos com o armazenamento de dados acessados com pouca frequência.
+
+> Os dados armazenados no Coldline são cobrados a uma taxa mensal baixa de armazenamento, embora uma tarifa seja aplicada nas recuperações.
+
+---
+
+3. Qual dos serviços a seguir pode ser escalonado para tamanhos maiores de banco de dados?
+
+    :black_large_square: Firestore
+
+    :black_large_square: Cloud Bigtable
+
+    :white_check_mark: Cloud Spanner
+
+    :black_large_square: Cloud SQL
+
+> O Cloud Spanner pode ser escalonado para tamanhos de banco de dados de petabytes, enquanto o Cloud SQL é limitado pelo tamanho das instâncias de banco de dados que você escolhe. No momento em que este teste foi elaborado, o máximo era 10.230 GB.
+
+---
+
+## 5º Módulo - Contêineres na nuvem
+
+- Introdução aos contêineres
+- Kubernetes
+- Google Kubernetes
+
+### Teste
+
+1. De onde vêm os recursos usados na criação de clusters do Google Kubernetes Engine?
+
+    :black_large_square: Cloud Storage
+
+    :black_large_square: Servidores bare metal
+
+    :black_large_square: App Engine
+
+    :white_check_mark: Compute Engine
+
+> Como os recursos usados na criação de clusters do Google Kubernetes Engine são do Compute Engine, o Google Kubernetes Engine aproveita os recursos do Compute Engine e da VPC do Google.
+
+---
+
+2. O que é um pod do Kubernetes?
+
+    :black_large_square: Um grupo de VMs
+
+    :white_check_mark: Um grupo de contêineres
+
+    :black_large_square: Um grupo de nós
+
+    :black_large_square: Um grupo de clusters
+
+>No Kubernetes, um grupo com um ou mais contêineres é chamado de pod. Os contêineres de um pod são implantados juntos. Eles são iniciados, interrompidos e replicados como um grupo.A carga de trabalho mais simples que o Kubernetes pode implantar é um pod com apenas um contêiner.
+
+---
+
+## 6º Módulo - Aplicativos no Google Cloud
+
+- Cloud Run
+- Desenvolvimento na nuvem
+- LAB: Olá, Cloud Run
+
+### Teste
+
 1. 
