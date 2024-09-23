@@ -288,9 +288,52 @@
 ## 6º Módulo - Aplicativos no Google Cloud
 
 - Cloud Run
+    - ![image23](img/image23.png)
 - Desenvolvimento na nuvem
+    - Cloud Functions
+        - ![image24](img/image24.png)
 - LAB: Olá, Cloud Run
 
 ### Teste
 
-1. 
+1. Por que um cliente do Google Cloud escolheria usar o Cloud Functions?
+
+    :black_large_square: O Cloud Functions é um serviço gratuito para hospedagem de operações de computação.
+
+    :black_large_square: O aplicativo do cliente tem uma estrutura monolítica legada que ele quer dividir em microsserviços.
+
+    :white_check_mark: O aplicativo dele contém código orientado a eventos e o cliente não quer provisionar recursos de computação para o app.
+
+    :black_large_square: O Cloud Functions é a principal forma de executar aplicativos em C++ no Google Cloud.
+
+---
+
+2. Selecione a plataforma gerenciada de computação que executa contêineres sem estado usando solicitações da Web ou eventos do Pub/Sub.
+
+    :black_large_square: Cloud Source Repositories
+
+    :white_check_mark: Cloud Run
+
+    :black_large_square: Gerenciamento de APIs da Apigee
+
+    :black_large_square: Cloud Endpoints
+
+---
+
+3. O Cloud Run só pode extrair imagens de (selecione duas opções):
+
+    :white_check_mark: Artifact Registry
+
+    :black_large_square: GitHub
+
+    :white_check_mark: Docker Hub
+
+    :black_large_square: Cloud Storage
+
+    :black_large_square: Registros auto-hospedados
+
+---
+
+## Resumo
+
+- Resumo do curso
