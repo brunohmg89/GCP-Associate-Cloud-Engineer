@@ -49,12 +49,56 @@
         - ![image28](img/image28.png)
 - Endereços IP para domínios padrão
 - Rotas e regras de Firewall
+    - Tabela de roteamento simples
+        - ![image29](img/image29.png)
+    - Regras de Firewall
+        - ![image30](img/image30.png)
 - Preços
 - Introdução ao laboratório: Rede VPC
 - LAB: Criação de redes VPC
 - Revisão do laboratório: Rede VPC
 - Designs de rede comuns
-- 
+- Introdução ao LAB: Implementar acesso privado do Google e o Cloud NAT
+- LAB: Implementar acesso privado do Google e o Cloud NAT
+- Revisão do LAB: Implementar acesso privado do Google e o Cloud NAT
+
+## 3º Módulo - Compute Engine
+
+- Visão geral do módulo
+- Compute Engine
+    - Informações
+        - ![image31](img/image31.png)
+    - Tipo de máquina
+        - ![image32](img/image32.png)
+    - Storage
+        - ![image33](img/image33.png)
+- Demo: Criar uma VM
+- Acesso e ciclo de vida da VM
+    - Ciclo de vida
+        - ![image34](img/image34.png)
+    - Patch Management
+        - ![image35](img/image35.png)
+- Intro ao LAB: Como criar máquinas virtuais
+- LAB: Como criar máquinas virtuais
+- Revisão do LAB: Como criar máquinas virtuais
+- Opções de computação
+    - Familias de máquinas
+        - ![image36](img/image36.png)
+- Preços do Compute Engine
+- Configurações especiais do Compute Engine
+- Imagens
+    - O que é uma imagem?
+        - ![image37](img/image37.png)
+- Opções de disco
+- Ações comuns do Compute Engine
+    - Movendo instâncias para outra Zona
+        - ![image38](img/image38.png)
+    - Snapshots de discos permanentes
+        - ![image39](img/image39.png)
+- Intro ao LAB: Como trabalhar com máquinas virtuais
+- LAB: Como trabalhar com máquinas virtuais
+- Revisão do LAB: Como trabalhar com máquinas virtuais
+- Revisão do módulo
 
 ### Questões
 
@@ -108,7 +152,7 @@
 
 ---
 
-2. Qual dos recursos a seguir não permite que você interaja com o Google Cloud?
+5. Qual dos recursos a seguir não permite que você interaja com o Google Cloud?
 
     :black_large_square: API baseada em REST
 
@@ -122,3 +166,81 @@
 
 ---
 
+6. Quais são os três tipos de redes disponíveis no Google Cloud?
+
+    :black_large_square: Zonal, regional e global
+
+    :black_large_square: Redes de 1 gigabit, 10 gigabits e 100 gigabits
+
+    :black_large_square: Unicast IPv4, multicast IPv4 e IPv6
+
+    :white_check_mark: Padrão, automática e personalizada.
+
+> O Google Cloud oferece três tipos de rede: padrão, automática e personalizada. Todo projeto começa com uma rede padrão. A rede automática usa os mesmos intervalos de IP de sub-rede que a padrão, com outro nome de rede. Com a personalizada, é possível especificar os intervalos de IP das sub-redes.
+
+---
+
+7. Qual a vantagem de aplicar regras de firewall por tag em vez de por endereço?
+
+    :black_large_square: As tags no tráfego de rede ajudam na detecção de redes.
+
+    :black_large_square: As tags nas regras de firewall controlam quais endereços IP temporários as VMs vão receber.
+
+    :black_large_square: As tags ajudam as organizações a acompanhar o faturamento do firewall.
+
+    :white_check_mark: Quando uma VM é criada com uma tag correspondente, as regras de firewall são aplicadas seja qual for o endereço IP atribuído.
+
+> Quando uma VM é criada, o endereço IP externo temporário é atribuído a partir de um pool. Não há como prever qual endereço será atribuído, portanto, não há como gravar uma regra que corresponda ao endereço IP dessa máquina antes que ela seja atribuída. As tags permitem uma atribuição simbólica que não depende da ordem dos endereços IP. As regras de firewall ficam mais simples, gerais e fáceis de manter.
+
+
+8. No Google Cloud, qual é o número mínimo de endereços IP necessários para uma instância de VM?
+
+    :black_large_square: Três: um endereço IP interno, um externo e um do alias
+
+    :black_large_square: Dois: um endereço IP interno e outro externo
+
+    :white_check_mark: Um: apenas um endereço IP interno
+
+> No Google Cloud, cada máquina virtual precisa ter um endereço IP interno. O endereço IP externo é opcional; portanto, uma instância de VM precisa apenas de um endereço IP.
+
+---
+
+9. Qual das afirmações sobre as instâncias de máquinas virtuais no Compute Engine é verdadeira?
+
+    :white_check_mark: No Compute Engine, uma VM é um serviço em rede que simula os recursos de um computador.
+
+    :black_large_square: Todas as VMs do Compute Engine são de locação única e não compartilham o hardware da CPU.
+
+    :black_large_square: Uma VM no Compute Engine sempre é associada a um único computador de hardware em um rack.
+
+    :black_large_square: O Compute Engine usa o VMware para criar instâncias de máquina virtual.
+
+> As VMs são um conjunto de serviços de rede no Compute Engine que incluem discos permanentes conectados à rede. Em alguns casos, a VM do Google Cloud se comporta de maneira diferente de hardwares ou de outros tipos de máquinas virtuais. Por exemplo, quando uma CPU virtual com vários locatários sofre bursts, excedendo a capacidade além das especificações da VM.
+
+---
+
+10. Qual afirmação sobre os discos permanentes é verdadeira?
+
+    :black_large_square: Os discos permanentes são sempre HDDs (discos giratórios magnéticos).
+
+    :white_check_mark: Os discos permanentes são criptografados por padrão.
+
+    :black_large_square: Os discos permanentes são dispositivos físicos de hardware conectados diretamente às VMs.
+
+    :black_large_square: Um disco permanente não pode ser redimensionado depois de criado.
+
+> Os discos permanentes não são físicos, eles são um serviço de rede virtual. Cada disco permanente fica criptografado com chaves definidas pelo sistema ou fornecidas pelo cliente.
+
+---
+
+11. O que são descontos por uso prolongado?
+
+    :black_large_square: Faturamento por segundo que inicia após o período mínimo de um minuto
+
+    :white_check_mark: Descontos automáticos que você adquire por executar recursos específicos do Compute Engine por um período relevante do mês de faturamento
+
+    :black_large_square: Compromissos de compra para recursos específicos que você sabe que vai usar
+
+    :black_large_square: Descontos que você recebe por usar instâncias de VM preemptiva
+
+> Descontos por uso prolongado são benefícios automáticos recebidos pela execução de recursos específicos do Compute Engine (vCPUs, memória, dispositivos de GPU) por uma grande parte do mês de faturamento. Para usar o desconto total de 30%, você precisa criar as instâncias de VM no primeiro dia do mês, porque os descontos são redefinidos no início de cada mês.
