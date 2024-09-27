@@ -68,4 +68,78 @@
             - `gcloud compute networks describe vpc-demo`
 - Cloud Interconnect e Peering
 - Cloud Interconnect
+    - Localização de colocations para realização do Interconnect Dedicada (Direto ou por parceiro)
+        - ![image41](img/image41.png)
 - Peering
+- Como escolher uma conexão
+    - ![image42](img/image42.png)
+- VPC compartilhada e peering VPC
+    - Shared VPC Vs. VPC Peering
+        - ![image43](img/image43.png)
+- Revisão
+
+## 2º Módulo - Balanceamento de carga e escalonamento automático
+
+- Visão geral do módulo
+- Grupos gerenciados de instâncias
+- Escalonamento automático e verificações de integridade
+
+### Questões
+
+1. Qual serviço do Google Cloud Interconnect requer conexão em uma instalação de colocation do Google Cloud e fornece 10 Gbps por link?
+
+    :black_large_square: Peering direto
+
+    :black_large_square: Interconexão por parceiro
+
+    :white_check_mark: Interconexão dedicada
+
+    :black_large_square: Peering por operadora
+
+    :black_large_square: Cloud VPN
+
+> A Interconexão dedicada requer uma conexão em uma instalação de colocation do Google Cloud e fornece 10 Gbps por link.
+
+---
+
+2. Quando não é possível atender aos requisitos de peering do Google, qual serviço de conexão de rede você pode escolher para se conectar ao Google Workspace e ao YouTube?
+
+    :black_large_square: Interconexão dedicada
+
+    :black_large_square: Peering direto
+
+    :black_large_square: Interconexão por parceiro
+
+    :white_check_mark: Peering por operadora
+
+> O peering por operadora permite que você se conecte ao Google Workspace e ao YouTube sem atender aos requisitos de peering do Google.
+
+---
+
+3. Qual das seguintes abordagens para uma rede de vários projetos usa um modelo de administração de rede centralizada?
+
+    :white_check_mark: VPC compartilhada
+
+    :black_large_square: Cloud VPN
+
+    :black_large_square: Peering de rede VPC
+
+> A VPC compartilhada é uma abordagem centralizada a uma rede de vários projetos porque a política de segurança e rede é aplicada em uma única rede VPC designada.
+
+---
+
+4. Qual é a finalidade de uma rede privada virtual (VPN)?
+
+    :black_large_square: O objetivo principal é criptografar dados para que sejam armazenados em um formato criptografado.
+
+    :black_large_square: Limitar o acesso à rede: as VPNs também são conhecidas como listas de controle de acesso (ACLs).
+
+    :white_check_mark: Oferecer um método de comunicação seguro (um túnel) para conectar dois ambientes confiáveis em um ambiente não confiável, como a Internet.
+
+    :black_large_square: Oferecer um método para detectar invasores na borda de um limite de rede.
+
+> As VPNs usam túneis IPsec para oferecer um caminho encapsulado e criptografado em um ambiente hostil ou não confiável.
+
+---
+
+5. 
