@@ -83,6 +83,18 @@
 - Visão geral do módulo
 - Grupos gerenciados de instâncias
 - Escalonamento automático e verificações de integridade
+- Visão geral do balanceamento de carga HTTPS
+    - LB HTTP(S)
+        - ![image44](img/image44.png)
+- Ex: Balanceador de carga HTTP
+- Balancemanento de carga HTTPS
+    - Certificados SSL
+        - ![image45](img/image45.png)
+    - NEG - Network endpoint groups
+        - ![image46](img/image46.png)
+- Intro ao LAB: Como configurar um balanceador de carga HTTP com escalonamento automático
+- LAB: Como configurar um balanceador de carga HTTP com escalonamento automático
+- 
 
 ### Questões
 
