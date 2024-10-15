@@ -96,8 +96,36 @@
 - LAB: Como configurar um balanceador de carga HTTP com escalonamento automático
 - Revisão LAB: Como configurar um balanceador de carga HTTP com escalonamento automático
 - Cloud CDN
+    - Modos de cache
+        - ![image47](img/image47.png)
 - Balanceamento de carga de proxy SSL
+    - SSL Proxy LB
+        - ![image48](img/image48.png)
 - Balanceamento de carga de proxy TCP
+- Balanceamento de carga de rede
+- Balanceamento de carga interno
+- Intro ao LAB: Como configurar um balanceador de carga interno
+- LAB: Como configurar um balanceador de carga interno
+    - Configurações importantes realizadas no LAB de LB
+        - Configurando tráfedo entre subnets
+            - ![image49](img/image49.png)
+        - Regras de Firewall de Health Check
+            - ![image50](img/image50.png)
+- Revisão LAB: Como configurar um balanceador de carga interno
+- Como escolher um balanceador de carga
+    - Balanceadores permitem tráfego IPv6 e possuem proxy reverso para tradução para IPv4.
+        - ![image51](img/image51.png)
+    - Sumário de Load Balancers
+        - ![image52](img/image52.png)
+
+## 3º módulo - Automatização de infraestrutura
+
+- Visão geral do módulo
+- Terraform
+- Intro ao LAB: Como automatizar a infraestrutura de redes usando terraform
+- LAB: Como automatizar a infraestrutura de redes usando terraform
+- Revisão do LAB: Como automatizar a infraestrutura de redes usando terraform
+
 
 ### Questões
 
@@ -157,4 +185,46 @@
 
 ---
 
-5. 
+5. Quais são os três serviços de balanceamento de carga do Google Cloud que oferecem suporte a clientes IPv6?
+
+    :black_large_square: Balanceamento de carga de rede
+
+    :black_large_square: Balanceamento de carga interno
+
+    :white_check_mark: Balanceamento de carga HTTP(S)
+
+    :white_check_mark: Balanceamento de carga de proxy TCP
+
+    :white_check_mark: Balanceamento de carga de proxy SSL
+
+---
+
+6. Quais das opções a seguir são políticas de escalonamento automático aplicáveis a grupos gerenciados de instâncias?
+
+    :white_check_mark: Métricas do Monitoring
+
+    :white_check_mark: Capacidade do balanceamento de carga
+
+    :white_check_mark: Utilização de CPU
+
+    :white_check_mark: Cargas de trabalho baseadas em filas
+
+---
+
+7. Qual das opções a seguir não é um serviço de balanceamento de carga do Google Cloud?
+
+    :black_large_square: Balanceamento de carga de rede
+
+    :black_large_square: Balanceamento de carga de proxy TCP
+
+    :black_large_square: Balanceamento de carga HTTP(S)
+
+    :white_check_mark: Balanceamento de carga definido por hardware
+
+    :black_large_square: Balanceamento de carga interno
+
+    :black_large_square: Balanceamento de carga de proxy SSL
+
+---
+
+8. 
