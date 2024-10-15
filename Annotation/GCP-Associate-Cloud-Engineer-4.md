@@ -94,7 +94,10 @@
         - ![image46](img/image46.png)
 - Intro ao LAB: Como configurar um balanceador de carga HTTP com escalonamento automático
 - LAB: Como configurar um balanceador de carga HTTP com escalonamento automático
-- 
+- Revisão LAB: Como configurar um balanceador de carga HTTP com escalonamento automático
+- Cloud CDN
+- Balanceamento de carga de proxy SSL
+- Balanceamento de carga de proxy TCP
 
 ### Questões
 
