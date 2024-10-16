@@ -134,7 +134,12 @@
 - Visão geral do módulo
 - Bigquery
 - Dataflow
+    - ![image53](img/image53.png)
 - Dataprep
+    - ![image54](img/image54.png)
+- Dataproc
+    - ![image55](img/image55.png)
+- Demo: Dataproc
 
 ### Questões
 
@@ -256,3 +261,29 @@
 
 ---
 
+10. Qual das seguintes afirmações sobre o Dataproc é verdadeira?
+
+    :black_large_square: Com o Dataproc, é possível ter o controle total sobre as configurações avançadas do HDFS.
+
+    :white_check_mark: Geralmente ele leva menos de 90 segundos para iniciar um cluster.
+
+    :black_large_square: O faturamento do Dataproc é feito em intervalos de 10 horas.
+
+    :black_large_square:Ele não se integra ao Cloud Monitoring, mas tem o próprio sistema de monitoramento.
+
+    > Ele inicia um cluster com rapidez.
+
+
+11. Como os serviços gerenciados podem ser úteis?
+
+    :black_large_square: Os serviços gerenciados são serviços pagos oferecidos por fornecedores terceirizados.
+
+    :black_large_square: Os serviços gerenciados são mais personalizáveis que as soluções de infraestrutura.
+
+    :white_check_mark: O Google vai cuidar do gerenciamento do seu serviço de infraestrutura se você assinar um contrato de serviços gerenciados.
+
+    :black_large_square: Os serviços gerenciados podem ser uma alternativa à criação e ao gerenciamento de soluções de infraestrutura.
+
+    > Os serviços gerenciados são apresentados como uma alternativa à criação de uma solução própria de processamento de dados de infraestrutura.
+
+---
