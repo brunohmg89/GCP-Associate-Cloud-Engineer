@@ -124,8 +124,17 @@
 - Terraform
 - Intro ao LAB: Como automatizar a infraestrutura de redes usando terraform
 - LAB: Como automatizar a infraestrutura de redes usando terraform
+    - Arquivos de configuração terraform adicionados a uma subpasta.
 - Revisão do LAB: Como automatizar a infraestrutura de redes usando terraform
+- Google Cloud Marketplace
+- Demo: Lançamento de soluções de infraestrutura no Google Cloud Marketplace
 
+## 4º módulo - Serviços gerenciados
+
+- Visão geral do módulo
+- Bigquery
+- Dataflow
+- Dataprep
 
 ### Questões
 
@@ -227,4 +236,23 @@
 
 ---
 
-8. 
+8. O que o Google Cloud Marketplace oferece?
+
+    :black_large_square: Uma plataforma de faturamento centralizada para todos os serviços e aplicativos do Google Cloud
+
+    :white_check_mark: Soluções para produção de outros fornecedores que já criaram as próprias configurações de implantação com o Terraform
+
+    :black_large_square: Uma plataforma para comercializar instâncias de VM
+
+---
+
+9. Qual é o benefício de escrever modelos para sua configuração do Terraform?
+
+    :black_large_square: Permite fixar no código as propriedades dos recursos
+
+    :white_check_mark: Permite que você abstraia parte da configuração em elementos básicos individuais que podem ser reutilizados.
+
+    :black_large_square: Ele permite que você execute o software de gerenciamento de configurações.
+
+---
+
