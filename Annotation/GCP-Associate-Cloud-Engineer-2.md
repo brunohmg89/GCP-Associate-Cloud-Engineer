@@ -55,13 +55,13 @@
 ## 2º Módulo - Recursos e acesso na nuvem
 
 - Hierarquia de recursos do Google Cloud
-    - ![image3](img/image3.png)
+![image3](img/image3.png)
 - Identity and Access Management (IAM)
-    - ![image4](img/image4.png)
+![image4](img/image4.png)
 - Contas de serviço (Service Account)
 - Cloud Identity
 - Interação com o Google Cloud
-    - ![image5](img/image5.png)
+![image5](img/image5.png)
 - LAB: Noções básicas do Google Cloud: Introdução ao Cloud Marketplace
 
 ### Teste
@@ -105,16 +105,16 @@
 - Redes de nuvem privada virtual (VPC)
 - Compute Engine
     - Descontos de compute engine
-        - ![image6](img/image6.png)
+    ![image6](img/image6.png)
 - Escalonamento de máquinas virtuais
 - Compatibilidades importantes com VPC
 - Cloud Load Balancing
     - Tipos de Load Balancing
-        - ![image7](img/image7.png)
+    ![image7](img/image7.png)
 - Cloud DNS e Cloud CDN
 - Como conectar redes à VPC do Google
     - Tipos de conexão entre redes Google
-        - ![image8](img/image8.png)
+    ![image8](img/image8.png)
 - LAB: Comece a usar a rede VPC e o Google Compute Engine
 
 ### Teste
@@ -170,39 +170,39 @@
 ## 4º Módulo - Armazenamento na nuvem
 
 - Opções de armazenamento na nuvem
-    - ![image21](img/image21.png)
+![image21](img/image21.png)
 - Cloud Storage
     - Permissões em arquivos em um bucket
-        - ![image9](img/image9.png)
+    ![image9](img/image9.png)
     - Politicas de ciclo de vida de um arquivo
-        - ![image10](img/image10.png)
+    ![image10](img/image10.png)
 - Cloud Storage: Classes de armazenamento e transferência de dados
     - Classes de armazenamento
-        - ![image11](img/image11.png)
+    ![image11](img/image11.png)
     - Coisas em comum em todas as classes
-        - ![image12](img/image12.png)
+    ![image12](img/image12.png)
 - Cloud SQL
     - Principais caracteristicas do Cloud SQL
-        - ![image13](img/image13.png)
+    ![image13](img/image13.png)
 - Cloud Spanner
     - Principais caracteristicas
-        - ![image14](img/image14.png)
-        - ![image15](img/image15.png)
+    ![image14](img/image14.png)
+    ![image15](img/image15.png)
 - Firestore
     - Caracteristicas
-        - ![image16](img/image16.png)
+    ![image16](img/image16.png)
     - Cobrança
-        - ![image17](img/image17.png)
+    ![image17](img/image17.png)
     - Cotas gratuitas
-        - ![image18](img/image18.png)
+    ![image18](img/image18.png)
 - Bigtable
     - Caracteristicas
-        - ![image19](img/image19.png)
+    ![image19](img/image19.png)
     - Casos de uso
-        - ![image20](img/image20.png)
+    ![image20](img/image20.png)
 - Comparação entre as opções de armazenamento
     - Melhores usos para as opções de armazenamento no Google Cloud
-        - ![image22](img/image22.png)
+    ![image22](img/image22.png)
 - LAB: Noções básicas do Google Cloud - Como começar a usar o Cloud Storage e o Cloud SQL
 
 ### Teste
@@ -288,10 +288,10 @@
 ## 6º Módulo - Aplicativos no Google Cloud
 
 - Cloud Run
-    - ![image23](img/image23.png)
+![image23](img/image23.png)
 - Desenvolvimento na nuvem
     - Cloud Functions
-        - ![image24](img/image24.png)
+    ![image24](img/image24.png)
 - LAB: Olá, Cloud Run
 
 ### Teste

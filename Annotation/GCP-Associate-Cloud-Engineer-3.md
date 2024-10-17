@@ -35,24 +35,24 @@
 - Visão geral do módulo
 - Nuvem privada
     - Objetos de VPC
-        - ![image25](img/image25.png)
+    ![image25](img/image25.png)
 - Projetos, redes e sub-redes
     - Tipos de VPC
-        - ![image26](img/image26.png)
+    ![image26](img/image26.png)
 - Demonstração: expandir uma sub-rede
 - Endereços IP
 - Demonstração: IP interno e externo
 - Como mapear endereços IP
     - DNS resolução de endereços internos
-        - ![image27](img/image27.png)
+    ![image27](img/image27.png)
     - DNS resolução de endereços externos
-        - ![image28](img/image28.png)
+    ![image28](img/image28.png)
 - Endereços IP para domínios padrão
 - Rotas e regras de Firewall
     - Tabela de roteamento simples
-        - ![image29](img/image29.png)
+    ![image29](img/image29.png)
     - Regras de Firewall
-        - ![image30](img/image30.png)
+    ![image30](img/image30.png)
 - Preços
 - Introdução ao laboratório: Rede VPC
 - LAB: Criação de redes VPC
@@ -67,34 +67,34 @@
 - Visão geral do módulo
 - Compute Engine
     - Informações
-        - ![image31](img/image31.png)
+    ![image31](img/image31.png)
     - Tipo de máquina
-        - ![image32](img/image32.png)
+    ![image32](img/image32.png)
     - Storage
-        - ![image33](img/image33.png)
+    ![image33](img/image33.png)
 - Demo: Criar uma VM
 - Acesso e ciclo de vida da VM
     - Ciclo de vida
-        - ![image34](img/image34.png)
+    ![image34](img/image34.png)
     - Patch Management
-        - ![image35](img/image35.png)
+    ![image35](img/image35.png)
 - Intro ao LAB: Como criar máquinas virtuais
 - LAB: Como criar máquinas virtuais
 - Revisão do LAB: Como criar máquinas virtuais
 - Opções de computação
     - Familias de máquinas
-        - ![image36](img/image36.png)
+    ![image36](img/image36.png)
 - Preços do Compute Engine
 - Configurações especiais do Compute Engine
 - Imagens
     - O que é uma imagem?
-        - ![image37](img/image37.png)
+    ![image37](img/image37.png)
 - Opções de disco
 - Ações comuns do Compute Engine
     - Movendo instâncias para outra Zona
-        - ![image38](img/image38.png)
+    ![image38](img/image38.png)
     - Snapshots de discos permanentes
-        - ![image39](img/image39.png)
+    ![image39](img/image39.png)
 - Intro ao LAB: Como trabalhar com máquinas virtuais
 - LAB: Como trabalhar com máquinas virtuais
 - Revisão do LAB: Como trabalhar com máquinas virtuais
@@ -192,6 +192,7 @@
 
 > Quando uma VM é criada, o endereço IP externo temporário é atribuído a partir de um pool. Não há como prever qual endereço será atribuído, portanto, não há como gravar uma regra que corresponda ao endereço IP dessa máquina antes que ela seja atribuída. As tags permitem uma atribuição simbólica que não depende da ordem dos endereços IP. As regras de firewall ficam mais simples, gerais e fáceis de manter.
 
+---
 
 8. No Google Cloud, qual é o número mínimo de endereços IP necessários para uma instância de VM?
 

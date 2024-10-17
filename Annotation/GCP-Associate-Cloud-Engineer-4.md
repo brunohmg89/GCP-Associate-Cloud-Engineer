@@ -8,7 +8,7 @@
 - Intro ao LAB: Como configurar a VPN de alta disponibilidade do Google Cloud
 - LAB: Como configurar a VPN de alta disponibilidade do Google Cloud
     - Simulação
-        - ![image40](img/image40.png)
+    ![image40](img/image40.png)
     - Comando Cloud Shell utilizados no laboratório
         - Criando um VPC no modo custom
             - `gcloud compute networks create vpc-demo --subnet-mode custom`
@@ -69,13 +69,13 @@
 - Cloud Interconnect e Peering
 - Cloud Interconnect
     - Localização de colocations para realização do Interconnect Dedicada (Direto ou por parceiro)
-        - ![image41](img/image41.png)
+    - ![image41](img/image41.png)
 - Peering
 - Como escolher uma conexão
-    - ![image42](img/image42.png)
+![image42](img/image42.png)
 - VPC compartilhada e peering VPC
     - Shared VPC Vs. VPC Peering
-        - ![image43](img/image43.png)
+    ![image43](img/image43.png)
 - Revisão
 
 ## 2º Módulo - Balanceamento de carga e escalonamento automático
@@ -85,22 +85,22 @@
 - Escalonamento automático e verificações de integridade
 - Visão geral do balanceamento de carga HTTPS
     - LB HTTP(S)
-        - ![image44](img/image44.png)
+    ![image44](img/image44.png)
 - Ex: Balanceador de carga HTTP
 - Balancemanento de carga HTTPS
     - Certificados SSL
-        - ![image45](img/image45.png)
+    ![image45](img/image45.png)
     - NEG - Network endpoint groups
-        - ![image46](img/image46.png)
+    ![image46](img/image46.png)
 - Intro ao LAB: Como configurar um balanceador de carga HTTP com escalonamento automático
 - LAB: Como configurar um balanceador de carga HTTP com escalonamento automático
 - Revisão LAB: Como configurar um balanceador de carga HTTP com escalonamento automático
 - Cloud CDN
     - Modos de cache
-        - ![image47](img/image47.png)
+    ![image47](img/image47.png)
 - Balanceamento de carga de proxy SSL
     - SSL Proxy LB
-        - ![image48](img/image48.png)
+    ![image48](img/image48.png)
 - Balanceamento de carga de proxy TCP
 - Balanceamento de carga de rede
 - Balanceamento de carga interno
@@ -108,15 +108,15 @@
 - LAB: Como configurar um balanceador de carga interno
     - Configurações importantes realizadas no LAB de LB
         - Configurando tráfedo entre subnets
-            - ![image49](img/image49.png)
+        ![image49](img/image49.png)
         - Regras de Firewall de Health Check
-            - ![image50](img/image50.png)
+        ![image50](img/image50.png)
 - Revisão LAB: Como configurar um balanceador de carga interno
 - Como escolher um balanceador de carga
     - Balanceadores permitem tráfego IPv6 e possuem proxy reverso para tradução para IPv4.
-        - ![image51](img/image51.png)
+    ![image51](img/image51.png)
     - Sumário de Load Balancers
-        - ![image52](img/image52.png)
+    ![image52](img/image52.png)
 
 ## 3º módulo - Automatização de infraestrutura
 
@@ -134,11 +134,11 @@
 - Visão geral do módulo
 - Bigquery
 - Dataflow
-    - ![image53](img/image53.png)
+![image53](img/image53.png)
 - Dataprep
-    - ![image54](img/image54.png)
+![image54](img/image54.png)
 - Dataproc
-    - ![image55](img/image55.png)
+![image55](img/image55.png)
 - Demo: Dataproc
 
 ### Questões
@@ -273,6 +273,7 @@
 
     > Ele inicia um cluster com rapidez.
 
+---
 
 11. Como os serviços gerenciados podem ser úteis?
 

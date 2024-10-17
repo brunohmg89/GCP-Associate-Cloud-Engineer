@@ -506,6 +506,8 @@ Cenário da Cymbal
 
     :black_large_square: Cloud Functions
 
+---
+
 2. Qual serviço de armazenamento de dados é um banco de dados exclusivo, disponível globalmente, escalável horizontalmente com semântica relacional?
 
     :black_large_square: Bigtable
